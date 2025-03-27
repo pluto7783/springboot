@@ -30,12 +30,19 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	
+	runtimeOnly 'org.springframework.boot:spring-boot-devtools'
+	
 	// JSP 관련 의존성
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	
     // 최신 tomcat-embed-jasper 사용 (Jakarta 지원)
     implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:10.1.0'
     providedRuntime 'jakarta.servlet:jakarta.servlet-api:5.0.0'
+    implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api' //스프링부트 3.0 이상
+	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl' //스프링부트 3.0 이상
+    
+    // 사이트메시
+    implementation 'org.sitemesh:sitemesh:3.2.2'
     
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
