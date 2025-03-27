@@ -19,7 +19,7 @@
 </head>
 <body>
     <h1>안녕하세요!</h1>
-    <p>이것은 기본적인 Sample 페이지입니다.441!</p>
+    <p>이것은 기본적인 Sample 페이지입니다.!</p>
     <p>현재 시간: <%= new java.util.Date() %></p>
 </body>
 </html>
